@@ -1,0 +1,7 @@
+start: S
+
+S ::= {a} a S | {d} d A | {e, f, b} B f B ;
+A ::= {e, f} C B | {} # ;
+B ::= {e, f, b} A b S ;
+C ::= {e} e | {f} f ;
+
